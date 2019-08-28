@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <br/>
+  {{obj.name}}
+<br>
+{{fruitsArray[4]}}
+<br>
+<ul>
+<li *ngFor = "let i of fruitsArray">{{i}}</li>
+</ul>
+<br>
+<p *ngIf = "isVarTrue">Hello World</p>
+
+<p *ngIf = "userName != 'MK'; then firstTemplate else secondTemplate">This is Muthukumar</p>
+
+<ng-template #firstTemplate> This is first Template</ng-template>
+<ng-template #secondTemplate> This is Second Template</ng-template>
+</div>
