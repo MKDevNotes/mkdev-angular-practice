@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:left">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <h2> UpperCase  {{userName | uppercase}} </h2>
+  <h2> LowerCase {{userName | lowercase}} </h2>
+  <h2> {{dateOfBirth}}</h2>
+  <h2> {{dateOfBirth | date}} </h2>
+  <h2> {{dateOfBirth | date : 'shortdate'}} </h2>
+  <h2> {{dateOfBirth | date : 'fullDate'}} </h2>
+  <h2> {{dateOfBirth | date : 'fullDate' | uppercase}} </h2>
+  <h1><u>Sorting Number</u></h1>
+  <br>
+
+  {{shortArray | sortingNumber: 'ascending'}}
+
+  <br>
+
+  {{shortArray | sortingNumber: 'descending'}}
+
+  </div>
